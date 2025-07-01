@@ -160,10 +160,10 @@
 </body>
 <script>
     async function main() {
-        let song = document.getElementById("my_audio")
-
+        let song = document.getElementById("songbtn")
         window.onload = await function () {
             song.play();
+        }
         }
     }
 
@@ -254,11 +254,13 @@
     })
 
 
-    const songelement = document.getElementsByClassName(".btn__letter")
-    const songbtn = document.getElementById("songbtn")
-    songelement.addEventListener(onclick, () => {
-        songbtn.playy()
-    })
+    const songbtn = document.getElementById("songbtn");
+    const btnLetter = document.getElementById("btn__letter");
+
+    btnLetter.addEventListener("click", () => {
+        songbtn.play();
+    });
+
 
 
 
